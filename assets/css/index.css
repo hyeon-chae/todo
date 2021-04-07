@@ -26,6 +26,10 @@ input{
 input::placeholder{
   color: #333;
 }
+input:focus{
+  outline: none;
+}
+
 
 button {
   cursor: pointer;
@@ -35,7 +39,7 @@ button {
 }
 
 .content-area{
-  max-width: 340px;
+  max-width: 400px;
   margin: 0 auto;
   position: absolute;
   top: 40%;
@@ -50,6 +54,11 @@ button {
 /* .clicked {
   color: #7f8c8d;
 } */
+.js-weather{
+  font-size: 28px;
+  font-weight: 200;
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+}
 
 /* clock */
 .js-clock{
@@ -58,9 +67,10 @@ button {
 }
 
 .js-clock h1{
-  font-size: 48px;
-  padding: 20px 0;
+  font-size: 62px;
+  padding: 0 0 30px;
   width: 100%;
+  font-weight: 200;
   text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);
 }
 .form {
@@ -75,9 +85,10 @@ button {
   box-sizing: border-box;
 }
 .greetings{
-  font-size: 22px;
+  font-size: 28px;
   color: #fff;
   text-align: center;
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .js-toDoForm{
@@ -91,24 +102,33 @@ button {
   width: 100%;
   box-sizing: border-box;
 }
-
+/* .js-toDoList{
+  background: #ffffff78;
+  padding: 20px;
+  border-radius: 16px;
+} */
 .js-toDoList li{
   padding-bottom: 10px;
   color: #fff;
   font-size: 18px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  margin-left: 12px;
+  justify-content: space-between;
+  /* background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 8px; */
+  padding: 10px 16px;
+  margin-bottom: 10px;
+  border-bottom: 1.5px solid #ffffff;
+  /* margin-left: 12px; */
 }
 .js-toDoList li button{
-  color: #292929;
-  background: #fff;
-  padding: 3px;
+  color: #ffffff;
+  /* background: #292929; */
+  /* padding: 3px;
   border-radius: 50%;
   width: 16px;
-  height: 16px;
-  font-size: 12px;
+  height: 16px; */
+  font-size: 16px;
   margin-left: 12px;
 }
 .form,

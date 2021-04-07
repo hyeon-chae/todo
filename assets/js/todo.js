@@ -33,7 +33,7 @@ paintTodo = (text) =>{
   list.id = newId;
   list.innerHTML =`
   <span>${text}</span>
-  <button type="button" class="fas fa-times"></button>
+  <button type="button" class="far fa-times-circle"></button>
   `
   todoList.appendChild(list);
   
